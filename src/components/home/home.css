@@ -1,0 +1,131 @@
+.generate{
+    margin-top: 5rem;
+    min-width: 350px;
+    transition: .5s;
+}
+.title{
+    font-size: var(--h1-font-size);
+    font-weight: var(--font-medium);
+    margin: 10rem 0 2rem;
+}
+.title span{
+    color: var(--green-color);
+    border-bottom: 3px solid rgb(14, 144, 49);;
+}
+.generate_input{
+    position: relative;
+    width: 550px;
+    min-width: 300px;
+    height: 4.5rem;
+    margin-bottom: 2rem;
+    transition: .5s;
+}
+.generate_input input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-left: 1.5rem;
+    font-size: var(--h3-font-size);
+    width: 100%;
+    height: 100%;
+    letter-spacing: .1rem;
+    border-radius: 5px;
+    outline: none;
+
+}
+.generate_input .icon_copy{
+    position: absolute;
+    right: 2rem;
+    top: 50%;
+    font-size: var(--h2-font-size);
+    color: var(--green-color);
+    transform: translateY(-50%);
+    transition: .5s;
+    cursor: pointer;
+    z-index: 999;
+}
+.icon_copy.clicked {
+    transform: scale(0.8);
+  }
+.generate_input .icon_copy:focus{
+    font-size: var(--h3-font-size);
+}
+.generate_button{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    background-color: var(--green-color);
+    padding: 1rem 2rem;
+    border-radius:5px ;
+    
+}
+.generate_button button{
+    background-color: transparent;
+    font-size: var(--h3-font-size);
+    color: var(--white-color);
+    transition: .5s;
+}
+.generate_button i{
+    font-size: var(--h2-font-size);
+    transition: .5s;
+}
+
+/*============== BREAKPOINTS ==============*/
+/* For large devices */
+@media screen and (max-width: 1024px) {
+    .generate{
+        padding: 0 3rem ;
+    }
+}
+/* For large devices */
+@media screen and (max-width: 992px) {
+
+}
+
+/* For medium devices */
+@media screen and (max-width: 768px) {
+    
+}
+
+@media screen and (max-width: 576px) {
+    .generate{
+        padding: 0 1rem ;
+    }
+    .title{
+        font-size: var(--h2-font-size);
+    }
+	.generate_input{
+        width: 330px;
+        height: 3.5rem;
+    }
+    .generate_button button{
+        font-size: var(--small-font-size);
+    }
+    .generate_button i{
+        font-size: var(--normal-font-size);
+    }
+}
+
+/* For small devices */
+@media screen and (max-width: 350px) {
+    .title{
+        font-size: var(--normal-font-size);
+    }
+	.generate_input{
+        width: 300px;
+        height: 3rem;
+    }
+    .generate_input input{
+        font-size: var(--normal-font-size);
+    }
+    .generate_input .icon_copy{
+        font-size: var(--normal-font-size);
+    }
+    .generate_button button{
+        font-size: var(--tiny-font-size);
+    }
+    .generate_button i{
+        font-size: var(--small-font-size);
+    }
+}
