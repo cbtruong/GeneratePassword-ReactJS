@@ -30,4 +30,12 @@ npx create-react-app portfolio-website
         "test": "react-scripts test",
         "eject": "react-scripts eject"
         },
+### If use vite
+    - open file vite.config.js and add to the command below
+    export default defineConfig({
+      plugins: [react()],
+      base:'/[projectGitName]/'
+})
+
+# DEPLOY
     Deploy: npm run deploy
